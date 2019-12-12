@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		FA6E766023A274D700A2A269 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E765F23A274D700A2A269 /* AppDelegate.swift */; };
 		FA6E766223A274D700A2A269 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E766123A274D700A2A269 /* SceneDelegate.swift */; };
-		FA6E766423A274D700A2A269 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E766323A274D700A2A269 /* ContentView.swift */; };
+		FA6E766423A274D700A2A269 /* TasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E766323A274D700A2A269 /* TasksView.swift */; };
 		FA6E766623A274D900A2A269 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA6E766523A274D900A2A269 /* Assets.xcassets */; };
 		FA6E766923A274D900A2A269 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA6E766823A274D900A2A269 /* Preview Assets.xcassets */; };
 		FA6E766C23A274D900A2A269 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA6E766A23A274D900A2A269 /* LaunchScreen.storyboard */; };
+		FA6E767423A285B200A2A269 /* EditTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E767323A285B200A2A269 /* EditTaskView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FA6E765C23A274D700A2A269 /* SwiftUIList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA6E765F23A274D700A2A269 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA6E766123A274D700A2A269 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FA6E766323A274D700A2A269 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FA6E766323A274D700A2A269 /* TasksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksView.swift; sourceTree = "<group>"; };
 		FA6E766523A274D900A2A269 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA6E766823A274D900A2A269 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FA6E766B23A274D900A2A269 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA6E766D23A274D900A2A269 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA6E767323A285B200A2A269 /* EditTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTaskView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +60,12 @@
 			children = (
 				FA6E765F23A274D700A2A269 /* AppDelegate.swift */,
 				FA6E766123A274D700A2A269 /* SceneDelegate.swift */,
-				FA6E766323A274D700A2A269 /* ContentView.swift */,
+				FA6E766323A274D700A2A269 /* TasksView.swift */,
 				FA6E766523A274D900A2A269 /* Assets.xcassets */,
 				FA6E766A23A274D900A2A269 /* LaunchScreen.storyboard */,
 				FA6E766D23A274D900A2A269 /* Info.plist */,
 				FA6E766723A274D900A2A269 /* Preview Content */,
+				FA6E767323A285B200A2A269 /* EditTaskView.swift */,
 			);
 			path = SwiftUIList;
 			sourceTree = "<group>";
@@ -147,8 +150,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA6E766023A274D700A2A269 /* AppDelegate.swift in Sources */,
+				FA6E767423A285B200A2A269 /* EditTaskView.swift in Sources */,
 				FA6E766223A274D700A2A269 /* SceneDelegate.swift in Sources */,
-				FA6E766423A274D700A2A269 /* ContentView.swift in Sources */,
+				FA6E766423A274D700A2A269 /* TasksView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
