@@ -9,19 +9,31 @@
 import SwiftUI
 
 struct EditTaskView: View {
-     let task: Task
     
-    init(task: Task = Task(name: "", favourite: false)) {
-        self.task = task
+    @Binding var name: String
+    @Binding var favourite: Bool
+    
+    var body: some View {
+        VStack {
+            HStack {
+                Text("Name:")
+                Divider()
+                TextField("Name", text: $name)
+            }
+            HStack {
+                Text("Favourite:")
+                Divider()
+                Toggle("Favourite", isOn: $favourite)
+            }
+        }
     }
-    
-   var body: some View {
-       Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-   }
 }
 
 struct EditTaskView_Previews: PreviewProvider {
+    @State static var name = ""
+    @State static var favourite = false
+    
     static var previews: some View {
-        EditTaskView()
+        EditTaskView(name: $name, favourite: $favourite)
     }
 }
