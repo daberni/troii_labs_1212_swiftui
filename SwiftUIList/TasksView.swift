@@ -10,6 +10,8 @@ import SwiftUI
 
 struct TasksView: View {
 
+    @State private var pushed: Bool = false
+
     let task1 = Task(name: "test", favourite: true)
 
     var tasks: [Task] = [Task(name: "Troii Kaffee", favourite: true),
@@ -21,10 +23,17 @@ struct TasksView: View {
             List(tasks) { task in
                 TaskItemView(task: task)
             }
-            .navigationBarTitle(Text("Todos").foregroundColor(Color.red))
-            .navigationBarItems(trailing: NavigationLink(destination: EditTaskView(), label: {
-                Text("Hinzufügen")
-            }))
+            .navigationBarTitle(
+                Text("Todos").foregroundColor(Color.red)
+            )
+            .navigationBarItems(trailing: HStack {
+                Button("Gude Hinzufügen") {
+                   self.pushed.toggle()
+               }
+                NavigationLink(destination: WorkingEditTaskView(pushed: $pushed, task: Task(name: "", favourite: false)), isActive: $pushed) { EmptyView()
+                }
+                NavigationLink("Schlechde Hinzufügen", destination: EditTaskView())
+            })
         }
     }
 }
@@ -57,3 +66,4 @@ struct TaskItemView: View {
         }
     }
 }
+	
